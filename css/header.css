@@ -4,9 +4,11 @@
 .header-wrapper{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
 }
 .header-logo {
-    margin-right: 76px;
+    /* margin-right: 76px; */
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -20,11 +22,24 @@
     background-color: #2E2F42;
     color: #f4f4fd;
 }
-
-.header-nav {
-    margin-right: auto;
+.mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
+.mobile-menu-btn-icon {}
+.header-nav {
+    /* margin-right: auto; */
+}
+.header-nav,
+.header-address {
+    display: none;
+}
 .header-menu {
     display: flex;
     gap: 40px;
@@ -66,16 +81,16 @@
 .header-address {}
 
 .header-contact {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 40px; */
 }
 
 .header-contact-item {}
 
 .header-contact-link {
     display: block;
-    padding: 24px 0;
+    /* padding: 24px 0; */
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -84,4 +99,47 @@
 }
 .header-contact-link:hover,.header-contact-link:focus{
     color: #404bbf;
+}
+@media only screen and (min-width: 768px) {
+    .header-nav,
+    .header-address {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: none;
+        }
+    /* СКАСОВУЄМО display: none для меню та контактів */
+    .header-nav,
+    .header-address {
+        display: block;
+    }
+    .header-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .header-nav {
+        margin-right: auto;
+        }
+      /* Повертаємо відступ від логотипу до меню */
+    .header-logo {
+        margin-right: 120px;
+    }
+}
+@media only screen and (min-width: 1158px) {
+    .header-nav,
+        .header-address {
+            display: block;
+        }
+    
+        .header-contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+        }
+        /* Повертаємо відступ від логотипу до меню */
+        .header-logo {
+            margin-right: 76px;
+        }
 }

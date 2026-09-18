@@ -1,0 +1,82 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: 250ms ease-out;
+    transition-property: transform;
+}
+.mobile-menu .header-address {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+.mobile-address .header-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* Тепер gap ідеально спрацює між поштою та телефоном! */
+}
+.mobile-menu .header-contact-link{
+    font-size: 20px;
+}
+.mobile-menu.is-open{
+    transform: translateX(0);
+}
+.menu-soc{
+    display: flex;
+    gap: 48px;
+
+}
+
+.mobile-menu-container {
+    padding: 72px 16px 40px;
+}
+.mobile-menu .mobile-menu-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+.mobile-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+}
+
+.mobile-menu-btn-icon {}
+
+.mobile-menu-list {
+    display: block;
+
+}
+
+.mobile-menu-item {
+    margin-bottom: 128px;
+}
+
+.mobile-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+.mobile-menu-link {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+.mobile-menu-link.active {
+    color: #404bbf;
+}
+@media only screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
