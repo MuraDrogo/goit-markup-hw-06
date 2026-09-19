@@ -90,10 +90,15 @@
   }
 }
 @media only screen and (min-width: 1158px) {
+    .portfolio {
+            padding: 120px 0;
+        }
     .portfolio-item {
         width: calc((100% - 72px) / 3);
     }
-
+    .portfolio-list {
+        gap: 48px 24px;
+        }
     .overlay {
         font-size: 16px;
     }

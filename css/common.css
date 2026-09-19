@@ -63,7 +63,7 @@ img{
 
 .container {
     min-width: 320px;
-    max-width: 375px;
+    max-width: 320px;
     padding: 16px;
     margin: 0 auto;
     border: 2px solid red;
@@ -76,10 +76,10 @@ img{
     }
 }
 
-@media screen and (min-width:1168px) {
+@media screen and (min-width:1158px) {
     .container {
-        max-width: 1168px;
-        padding: 0 16px;
+        max-width: 1158px;
+        padding: 0 15px;
     }
 }
 .section-title {
