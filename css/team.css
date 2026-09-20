@@ -1,7 +1,6 @@
 .team {
     background-color: #f4f4fd;
     padding: 96px 0;
-    padding: 120px 0;
 }
 .team-wrap {
     padding: 32px 16px;
@@ -78,6 +77,8 @@
 }
 @media only screen and (min-width: 768px) {
     .team-list {
+            max-width: 552px;
+            margin: 0 auto;
             gap: 64px 24px;
         }
     .team-img {

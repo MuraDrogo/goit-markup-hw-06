@@ -13,12 +13,13 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 48px;
+
 }
+
 .mobile-address .header-contact {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    /* Тепер gap ідеально спрацює між поштою та телефоном! */
+    
 }
 .mobile-menu .header-contact-link{
     font-size: 20px;
@@ -31,9 +32,17 @@
     gap: 48px;
 
 }
-
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+}
 .mobile-menu-container {
+    height: 100%;
     padding: 72px 16px 40px;
+    display: flex;
+    flex-direction: column;
 }
 .mobile-menu .mobile-menu-button {
     position: absolute;
@@ -59,7 +68,6 @@
 }
 
 .mobile-menu-item {
-    margin-bottom: 128px;
 }
 
 .mobile-menu-item:not(:last-child) {
