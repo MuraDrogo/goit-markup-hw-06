@@ -96,11 +96,11 @@
             padding: 120px 0;
         }
     .team-list {
+        max-width: none;
         gap: 24px;
     }
 
     .team-item {
-        width: 264px;
         width: calc((100% - 72px) / 4);
     }
 }
